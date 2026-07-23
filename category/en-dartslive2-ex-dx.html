@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DARTSLIVE2 | EX, DX - DARTSLIVE product support site</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;color:#222;background:#f5f6f8;line-height:1.8}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{background:#14171c}.header-in{display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+.logo img{height:40px;display:block}
+nav a{color:#eee;text-decoration:none;margin-left:20px;font-size:14px}nav a:hover{color:#e8434d}
+.searchbar{background:#1f242c;padding:18px 0;position:relative}
+#q{width:100%;padding:12px 16px;font-size:16px;border:0;border-radius:6px}
+#results{position:absolute;z-index:10;list-style:none;margin:4px 0 0;padding:0;background:#fff;border-radius:6px;box-shadow:0 4px 16px rgba(0,0,0,.25);max-width:920px;width:calc(100% - 40px)}
+#results li a{display:block;padding:10px 16px;text-decoration:none;color:#222;border-bottom:1px solid #eee;font-size:14px}
+#results li a:hover{background:#f2f4f7}#results .lang{color:#999;font-size:11px;margin-right:8px;border:1px solid #ccc;border-radius:3px;padding:0 4px}
+#results .snip{display:block;color:#888;font-size:12px;line-height:1.5;margin-top:2px}
+#results mark{background:#ffe289;padding:0 1px}
+main{padding:32px 20px 64px}
+h1{font-size:24px;border-bottom:3px solid #e8434d;padding-bottom:8px}
+h2{font-size:20px;margin-top:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.card{background:#fff;border-radius:8px;padding:0;overflow:hidden;text-decoration:none;color:#222;box-shadow:0 1px 4px rgba(0,0,0,.08);display:flex;flex-direction:column}
+.card:hover{box-shadow:0 3px 10px rgba(0,0,0,.15)}
+.card-img{width:100%;height:300px;object-fit:contain;display:block;background:#fff;padding:10px 0 0}
+.card-body{display:flex;flex-direction:column;gap:6px;padding:16px 20px}
+.card-name{font-weight:bold}.card-count{color:#888;font-size:13px}
+h3{font-size:17px;margin-top:32px}
+.art-list{background:#fff;border-radius:8px;padding:8px 0;list-style:none;margin:0}
+.art-list li{border-bottom:1px solid #eee}.art-list li:last-child{border-bottom:0}
+.art-list a{display:block;padding:12px 20px;text-decoration:none;color:#1a5dab}.art-list a:hover{background:#f2f6fb}
+article{background:#fff;border-radius:8px;padding:28px 32px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+article img{max-width:100%;height:auto;margin:4px 6px 4px 0;vertical-align:top}
+article a{color:#1a5dab}article table{border-collapse:collapse;width:100%}article th,article td{border:1px solid #ddd;padding:6px 10px;font-size:14px}
+.crumb{font-size:13px;color:#888;margin-bottom:16px}.crumb a{color:#1a5dab;text-decoration:none}
+.updated{color:#999;font-size:12px;margin-top:32px;border-top:1px solid #eee;padding-top:12px}
+footer{background:#14171c;color:#aaa;font-size:12px;padding:20px 0;text-align:center}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap header-in">
+    <a class="logo" href="../index.html"><img src="../assets/files/dllogo_twice_white200.png" alt="DARTSLIVE product support site"></a>
+    <nav>
+      <a href="../index.html#ja">日本語</a>
+      <a href="../index.html#en">ENGLISH,OTHER</a>
+    </nav>
+  </div>
+</header>
+<div class="searchbar"><div class="wrap">
+  <input id="q" type="search" placeholder="キーワード検索 / Search..." autocomplete="off">
+  <ul id="results" hidden></ul>
+</div></div>
+<main class="wrap">
+<nav class="crumb"><a href="../index.html">Home</a> › DARTSLIVE2 | EX, DX</nav><h1>DARTSLIVE2 | EX, DX</h1><ul class="art-list"><li><a href="../article/66-help001.html">dl2_001_Unable to start / Screen does not display anything</a></li><li><a href="../article/67-help002.html">dl2_002_Dart machine freezes / It keeps rebooting</a></li><li><a href="../article/68-help003.html">dl2_003_Unable to play games</a></li><li><a href="../article/69-help004.html">dl2_004_Camera does not display anything /f lickers</a></li><li><a href="../article/70-help005.html">dl2_005_An error screen is displayed</a></li><li><a href="../article/71-help006.html">dl2_006_Unable to get online</a></li><li><a href="../article/72-help007.html">dl2_007_Unable to play online games</a></li><li><a href="../article/73-help008.html">dl2_008_Credit does not increase</a></li><li><a href="../article/74-help009.html">dl2_009_Coin counter does not work</a></li><li><a href="../article/75-help010.html">dl2_010_Want to change the credit settings</a></li><li><a href="../article/76-help011.html">dl2_011_Problem with the target</a></li><li><a href="../article/77-help012.html">dl2_012_Missed dart detector does not work</a></li></ul>
+</main>
+<footer><div class="wrap">&copy; DARTSLIVE PM dept. 2026</div></footer>
+<script>
+
+var q=document.getElementById('q');
+q.addEventListener('keydown',function(e){
+  if(e.key==='Enter'&&q.value.trim()){
+    location.href='../index.html#q='+encodeURIComponent(q.value.trim());
+  }
+});
+
+</script>
+</body>
+</html>
